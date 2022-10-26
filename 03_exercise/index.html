@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <div>
+            <section class="sidebar1">
+                <article class="ac accc">1</article>
+                <article class="ac accc">2</article>
+                <article class="ac accc">3</article>
+                <article class="ac accc">4</article>
+            </section class="content">
+            <section>
+                <article class="ac acc">6</article>
+                <article class="ac acc">7</article>
+                <article class="ac acc">8</article>
+            
+            </section>
+            <section class="sidebar2">
+                <article class="ac acc">5</article>
+                <article class="ac acc">5</article>
+                
+            </section>
+        </div>
+        
+    </main>
+    <style>
+        body, html {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background: grey;
+    }
+    
+    * {
+        box-sizing: border-box;
+    }
+    div{
+        display: grid;
+        grid-template-areas: "sec1 sec2 sec2 sec3";
+        gap: 20px;
+        margin:0;
+    }
+    
+    .sidebar1{
+        grid-area: sec1;
+    }
+    .sidebar2{
+        grid-area: sec2;
+        margin: 0;
+        grid-column: 2/ 4;
+    }
+    .content{
+        grid-area: sec3;
+    }
+    .ac{
+        width: 100%;
+        height: 3em;
+        background-color: white;
+        margin: 0;
+
+        
+    }
+    .acc{
+       margin-bottom: 1em;
+    }
+    .accc{
+        margin-bottom: 1.5px;
+    }
+    header{
+        height: 100px;
+        background-color: white;
+        
+        box-shadow: 5px 10px #888888;
+        border: 1px solid black;
+    }
+
+section{
+    border: 1px solid black;
+    
+    
+}
+
+        
+    </style>
+    
+</body>
+</html>
